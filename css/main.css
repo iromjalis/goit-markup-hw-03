@@ -1,0 +1,207 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --team-bg-color: #f5f4fa;
+  --bg-color: #e5e5e5;
+  --footer-bg: #2F303A;
+}
+
+/* основной текст #757575 */
+/* вторичный текст #212121 */
+/* WEB #2196F3 */
+/* цвет hero background: rgba(47, 48, 58, 0.4);
++ footer #2F303A;
++ наша команда #F5F4FA; */
+/* цвет особенности + чем занимаемся #E5E5E5 */
+/* цвет наша команда #F5F4FA */
+
+/*для сброса настроек списка без маркера */
+
+ul {
+  list-style: none;
+}
+
+body{
+  background-color: var(--primary-white-color);
+  color: var(primary-text-color);
+  font-family: Roboto, sant-serif;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+header{
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover img,
+a:focus img,
+.link:hover,
+.link:focus,
+.auth-btn a:hover,
+.auth-btn:focus {
+  color: var(--accent-color);
+}
+
+/*logo*/
+.logo{
+  width: 145px;
+  height: 31px;
+}
+
+/* Навигация в шапке */
+.site-nav a ,
+.link{
+  color: var(--title-text-color);
+}
+
+.link.current{
+  color: var(--accent-color);
+}
+
+.link:active,
+.auth-btn a:active{
+  color: var(--accent-color);
+  border-bottom: none;
+}
+
+/*Buttons*/
+.auth-btn a {
+  color: var(--primary-text-color);
+}
+
+/* Герой */
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--primary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*Заказать услугу*/
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  border-color:  var(--accent-color);
+
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 62px 10px 25px;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+  color:(var(--primary-white-color))
+}
+
+/*преимущества*/
+.features-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+/*описание преимуществ*/
+.description {
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}
+
+
+/*Чем мы занимаемся*/
+.section-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/*Десктопные приложения*/
+.work-example,
+.work-example
+ {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color); /*изменить на #fff*/
+}
+
+
+/*team name*/
+.name {
+  font-size: 16px;
+  line-height: 1,18;
+  text-align: center;
+}
+
+/*team profession*/
+.profession {
+  color: var(--primary-text-color);
+  
+}
+
+
+.team {
+  background-color: var(--team-bg-color);
+  font-size: 16px;
+  line-height: 1,18;
+  text-align: center;
+}
+
+.social-media img:hover,
+.social-media img:focus {
+  background-color:  var(--accent-color);
+  border: 3px solid var(--accent-color);
+  border-radius: 100px;
+}
+
+.clients img:hover,
+.clients img:focus{
+  border: 3px solid var(--accent-color);
+}
+
+.address.link{
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color)
+}
+footer{
+  background-color: var(--footer-bg);
+}
+.contacts.link{
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color)
+}
+
+header{
+  display: flex;
+}
+
+ul.site-nav>li{
+  display: inline;
+}

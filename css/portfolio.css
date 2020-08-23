@@ -1,0 +1,93 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --team-bg-color: #f5f4fa;
+  --bg-color: #e5e5e5;
+  --footer-bg-color: #2f303a;
+}
+
+ul {
+  list-style: none;
+}
+
+body{
+  font-family: Roboto, serif;
+  display: inline;
+}
+
+.heading{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color)
+}
+
+.deskription{
+font-weight: normal;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+}
+
+.link{
+  color: var(--title-text-color);
+  letter-spacing: 0.02em;
+}
+
+
+a img:hover,
+a:focus img,
+.link:hover,
+.link:focus,
+.link:active,
+.auth-btn li:hover,
+.auth-btn li:focus,
+.auth-btn li:active{
+  color: var(--accent-color);
+}
+
+/*расположение  кнопок*/
+ul.btn li{
+  display: inline;
+}
+
+/*Кнопки*/
+.button{
+  display: inline;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--title-text-color);
+  border: none;
+  box-shadow: none;
+  background-color: var(--team-bg-color);
+  font-weight: 700;
+}
+
+
+.button:active,
+.button:focus,
+.button:hover{
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.example{
+  color: var(--primary-white-color);
+}
+.example:focus,
+.example:active,
+.example:hover{
+  background-color: var(--accent-color);
+}
+
+ul.img>li{
+  width: 354px;
+}
+
+ul.site-nav li{
+  display: inline;
+}
+
