@@ -17,12 +17,6 @@
 /* цвет особенности + чем занимаемся #E5E5E5 */
 /* цвет наша команда #F5F4FA */
 
-/*для сброса настроек списка без маркера */
-
-ul {
-  list-style: none;
-}
-
 body{
   background-color: var(--primary-white-color);
   color: var(primary-text-color);
@@ -34,19 +28,30 @@ body{
   letter-spacing: 0.03em;
 }
 
+/*шапка сайта с навигацией*/
 header{
-  width: 1440px;
   letter-spacing: 0.02em;
   margin: 0;
-  padding-left: 215px;
-  padding-right: 215px;
-
+  padding: 0;
 }
 
+/*для сброса настроек списка без маркера */
 
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Контейнер для шапки сайта*/
 .container{
-  width: 1170px;
-  border: 1px solid tomato;
+  border: 1px solid red;
+  min-width: 1200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 a {
@@ -58,7 +63,8 @@ a:focus img,
 .link:hover,
 .link:focus,
 .auth-btn a:hover,
-.auth-btn:focus {
+.auth-btn:focus,
+{
   color: var(--accent-color);
 }
 
@@ -89,42 +95,58 @@ a:focus img,
   color: var(--primary-text-color);
 }
 
+.hero{
+  text-align: center;
+}
+
 /* Герой */
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   background-color: var(--primary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /*Заказать услугу*/
-.button {
-  color: var(--primary-white-color);
+a.button{
+  display: inline-block;
   background-color: var(--accent-color);
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  border-color:  var(--accent-color);
-  width: 200px;
-  height: 50px;
+  border-color: var(--accent-color);
+  min-width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 32px ;
+  border-radius: 4px; 
+  padding: 10px 32px;
+  margin-bottom: 294px;
 }
 
 .button:hover,
 .button:focus,
 .button:active{
-  color:(var(--primary-white-color))
+  color: var(--primary-white-color);
+  border: transparent;
 }
 
 /*преимущества*/
+.features>li img{
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 25px 102px;
+  border: 1px solid var(--title-text-color);
+} 
+
 .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--title-text-color);
@@ -132,6 +154,8 @@ a:focus img,
 
 /*описание преимуществ*/
 .description {
+  margin-top: 0;
+  margin-bottom: 94px;
   line-height: 1.7;
   color: var(--primary-text-color);
 }
@@ -207,4 +231,3 @@ footer{
   letter-spacing: 0.03em;
   color: var(--primary-text-color)
 }
-

@@ -15,20 +15,21 @@
 
 </head>
 
-<body class="page">
+<body>
 
     <!--Шапка сайта-->
-    <header class="page-header">
+    <header>
 
         <!--обернутая навигация для уменьшения по бокам-->
         <div class="container">
             <a href="./index.html"> 
                 <img src="./images/WebStudio.svg" alt="Лого" class="logo">
             </a>
+
             <nav>
     
     
-                <ul class="site-nav ">
+                <ul class="site-nav list">
                     <li><a href="./index.html" class="link current">Студия</a></li>
                     <li><a href="./portfolio.html" class="link ">Портфолио</a></li>
                     <li><a href="" class="link">Контакты</a></li>
@@ -53,45 +54,48 @@
     <!--Основной контент-->
     <main>
         <!--герой с будущим банером H1-->
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a class="button" href="./index.html">Заказать услугу</a>
-        </section>
-
+        
+            <section class="hero">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <a class="button" href="./index.html">Заказать услугу</a>
+            </section>
+    
         <!--перечисление приемуществ H2-->
-        <section>
-            <h2 hidden>Особенности</h2>
-            <ul class="features">
-                <li >
-                    <img src="./images/Vector1.png"  alt="тв тарелка" height="70" >
-                    <h3 class="features-title">Внимание к деталям</h3>
-                    <p class="description">
-                        Идейные соображения, а также начало повседневной работы по формированию позиции.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/Vector2.png" width="67" height="70" alt="часы">
-                    <h3 class="features-title">Пунктуальность</h3>
-                    <p class="description">
-                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/Vector3.png" width="70" height="64" alt="компьютер">
-                    <h3 class="features-title">Планирование</h3>
-                    <p class="description">
-                        Равным образом консультация с широким активом в значительной степени обуславливает.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/Vector4.png" width="55" height="60" alt="космонавт">
-                    <h3 class="features-title">Современные технологии</h3>
-                    <p class="description">
-                        Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-                    </p>
-                </li>
-            </ul>
-        </section>
+        <div class="container">
+            <section >
+                <h2 hidden>Особенности</h2>
+                <ul class="features">
+                    <li >
+                        <img src="./images/Vector1.png"  alt="тв тарелка" height="70" >
+                        <h3 class="features-title">Внимание к деталям</h3>
+                        <p class="description">
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Vector2.png" width="67" height="70" alt="часы">
+                        <h3 class="features-title">Пунктуальность</h3>
+                        <p class="description">
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Vector3.png" width="70" height="64" alt="компьютер">
+                        <h3 class="features-title">Планирование</h3>
+                        <p class="description">
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Vector4.png" width="55" height="60" alt="космонавт">
+                        <h3 class="features-title">Современные технологии</h3>
+                        <p class="description">
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <!--Чем мы занимаемся H2-->
         <section>
@@ -300,7 +304,7 @@
             <b class="work-example">Подпишитесь на рассылку</b> <br>
             <input type="email" placeholder="E-mail">
             <a class="button" href=""> Подписаться
-                <img src="./images/samoletik.png" alt="Самолетик">
+                <img src="./images/samoletik.png" alt="Самолетик" >
             </a>
         </div>
     </footer>
