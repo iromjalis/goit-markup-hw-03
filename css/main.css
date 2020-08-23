@@ -35,7 +35,18 @@ body{
 }
 
 header{
+  width: 1440px;
   letter-spacing: 0.02em;
+  margin: 0;
+  padding-left: 215px;
+  padding-right: 215px;
+
+}
+
+
+.container{
+  width: 1170px;
+  border: 1px solid tomato;
 }
 
 a {
@@ -99,12 +110,11 @@ a:focus img,
   font-size: 16px;
   line-height: 1.88;
   border-color:  var(--accent-color);
-
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 62px 10px 25px;
+  padding: 10px 32px ;
 }
 
 .button:hover,
@@ -198,10 +208,3 @@ footer{
   color: var(--primary-text-color)
 }
 
-header{
-  display: flex;
-}
-
-ul.site-nav>li{
-  display: inline;
-}

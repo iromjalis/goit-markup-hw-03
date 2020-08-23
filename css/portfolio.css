@@ -14,7 +14,7 @@ ul {
 
 body{
   font-family: Roboto, serif;
-  display: inline;
+
 }
 
 .heading{
@@ -49,10 +49,6 @@ a:focus img,
   color: var(--accent-color);
 }
 
-/*расположение  кнопок*/
-ul.btn li{
-  display: inline;
-}
 
 /*Кнопки*/
 .button{
@@ -85,9 +81,5 @@ ul.btn li{
 
 ul.img>li{
   width: 354px;
-}
-
-ul.site-nav li{
-  display: inline;
 }
 
