@@ -29,7 +29,8 @@ body{
 }
 
 /*шапка сайта с навигацией*/
-header{
+header,
+h2{
   letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
@@ -125,7 +126,7 @@ a.button{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px; 
   padding: 10px 32px;
-  margin-bottom: 294px;
+  margin-bottom: '178'px;
 }
 
 .button:hover,
@@ -136,7 +137,7 @@ a.button{
 }
 
 /*преимущества*/
-.features>li img{
+.features>li img,{
   margin-bottom: 30px;
   display: inline-block;
   text-align: center;
@@ -163,6 +164,8 @@ a.button{
 
 /*Чем мы занимаемся*/
 .section-title{
+  margin-top: 0px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -171,9 +174,9 @@ a.button{
 }
 
 /*Десктопные приложения*/
-.work-example,
-.work-example
- {
+.work-example {
+  margin-top: 0px;
+  margin-bottom: 188px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
@@ -184,7 +187,13 @@ a.button{
 
 
 /*team name*/
+.team-img img{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .name {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 1,18;
   text-align: center;
@@ -192,18 +201,24 @@ a.button{
 
 /*team profession*/
 .profession {
+  margin-top: 0;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   
 }
 
 
 .team {
+  text-align: center;
   background-color: var(--team-bg-color);
   font-size: 16px;
   line-height: 1,18;
   text-align: center;
 }
+.social-media{
+  margin-bottom: 24px ;
 
+}
 .social-media img:hover,
 .social-media img:focus {
   background-color:  var(--accent-color);
@@ -216,6 +231,14 @@ a.button{
   border: 3px solid var(--accent-color);
 }
 
+.clients>li img{
+  margin-bottom: 94px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 25px 102px;
+  border: 1px solid var(--title-text-color);
+} 
+ 
 .address.link{
   font-style: normal;
   line-height: 1.7;
