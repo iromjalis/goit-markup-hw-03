@@ -30,7 +30,7 @@ body{
 
 /*шапка сайта с навигацией*/
 header,
-h2{
+h2, h3,{
   letter-spacing: 0.02em;
   margin: 0;
   padding: 0;
@@ -52,7 +52,12 @@ ul{
   margin-right: 200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.nopadding{
+  padding-top: 0;
 }
 
 a {
@@ -137,7 +142,7 @@ a.button{
 }
 
 /*преимущества*/
-.features>li img,{
+.features>li>img,{
   margin-bottom: 30px;
   display: inline-block;
   text-align: center;
@@ -164,6 +169,7 @@ a.button{
 
 /*Чем мы занимаемся*/
 .section-title{
+  margin-bottom: 0;
   margin-top: 0px;
   padding-bottom: 50px;
   font-weight: 700;
@@ -176,7 +182,6 @@ a.button{
 /*Десктопные приложения*/
 .work-example {
   margin-top: 0px;
-  margin-bottom: 188px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
