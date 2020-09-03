@@ -12,28 +12,28 @@
 </head>
 <body>
     <header>
-        <div class="container">
-                <!--Логотип header-->
+        <!--Логотип header-->
+        <div class="main container">
             <a href="./index.html"><img src="./images/WebStudio.svg" alt="Логотип"></a>
             <nav class="nav">
-                <ul class="nav-title">
-                    <li ><a href="./index.html" class="link ">
+                <ul class="nav-list">
+                    <li class="item"><a href="./index.html" class="link current">
                         Студия</a></li>
-                    <li ><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li ><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-        
+    
             <!--Контакты-->
-            <ul>
-                <li > 
-                    <a href="mailto:info@devstudio.com" class="contacts"> 
+            <ul class="contacts-list">
+                <li class="item"> 
+                    <a href="mailto:info@devstudio.com" class="contacts link"> 
     <!--                     <img src="./images/envelope.jpg" alt="конверт" />
     -->                    info@devstudio.com 
                     </a>
                 </li>
-                <li >
-                    <a href="tel:+380961111111" class="contacts"> 
+                <li class="item">
+                    <a href="tel:+380961111111" class="contacts link"> 
     <!--                     <img src="./images/phone.png" alt="тел" />
     -->                    +38 096 111 11 11 
                     </a>
@@ -45,64 +45,76 @@
     <main >
         <div class="container">
             <ul class="btn-list">
-                <li ><a href="" class="hero-btn">Все</a></li>
-                <li ><a href="" class="hero-btn">Веб-сайты</a></li>
-                <li ><a href="" class="hero-btn">Приложения</a></li>
-                <li ><a href="" class="hero-btn">Дизайн</a></li>
-                <li ><a href="" class="hero-btn">Маркетинг</a></li>
+                <li class="item"></li><a href="" class="hero-btn">Все</a></li>
+                <li class="item"></li><a href="" class="hero-btn">Веб-сайты</a></li>
+                <li class="item"></li><a href="" class="hero-btn">Приложения</a></li>
+                <li class="item"></li><a href="" class="hero-btn">Дизайн</a></li>
+                <li class="item"></li><a href="" class="hero-btn">Маркетинг</a></li>
             </ul>
         </div>
        
-        <div class="examples-container">
-            <div >
-                <ul class="examples-list">
-                    <li class="examples">
-                        <img src="./images/portfolio1.jpg" alt="экран с лаптопа">
-                        <p class="img-title">Технокряк</p>
-                        <p class="img-description">Веб-сайт</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio2.jpg" alt="баскетболисты">
-                        <p class="img-title">Постер New Orlean vs Golden Star</p>
-                        <p class="img-description">Дизайн</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio3.jpg" alt="ресторан">
-                        <p class="img-title">Ресторан Seafood</p>
-                        <p class="img-description">Приложение</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio4.jpg" alt="наушники">
-                        <p class="img-title">Проект Prim</p>
-                        <p class="img-description">Маркетинг</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio5.jpg" alt="коробки">
-                        <p class="img-title">Проект Boxes</p>
-                        <p class="img-description">Приложение</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio6.jpg" alt="экран компьютера">
-                        <p class="img-title"> Inspiration has no Borders</p>
-                        <p class="img-description">Веб-сайт</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio7.jpg" alt="журнал">
-                        <p class="img-title">Издание Limited Edition</p>
-                        <p class="img-description">Дизайн</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio8.jpg" alt="этикетка">
-                        <p class="img-title">Проект LAB</p>
-                        <p class="img-description">Маркетинг</p>
-                    </li>
-                    <li class="examples">
-                        <img src="./images/portfolio9.jpg" alt="ноутбук">
-                        <p class="img-title">Growing Business</p>
-                        <p class="img-description">Приложение</p>
-                    </li>
-                </ul>
-    
+        <div class="container ">
+            <div class="examples-list">
+                <img src="./images/portfolio1.jpg" alt="экран с лаптопа">
+                <span>
+                    <p class="img-title">Технокряк</p>
+                    <p class="img-description">Веб-сайт</p>
+                </span>
+
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio2.jpg" alt="баскетболисты">
+                <span>
+                    <p class="img-title">Постер New Orlean vs Golden Star</p>
+                    <p class="img-description">Дизайн</p>
+                </span>
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio3.jpg" alt="ресторан">
+                <p class="img-title">Ресторан Seafood</p>
+                <p class="img-description">Приложение</p>
+            </div>
+            
+            <div class="examples-list">
+                <img src="./images/portfolio4.jpg" alt="наушники">
+                <p class="img-title">Проект Prim</p>
+                <p class="img-description">Маркетинг</p>
+            </div>
+                    
+            <div class="examples-list">
+                <img src="./images/portfolio5.jpg" alt="коробки">
+                <p class="img-title">Проект Boxes</p>
+                <p class="img-description">Приложение</p>
+                
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio6.jpg" alt="экран компьютера">
+                <p class="img-title"> Inspiration has no Borders</p>
+                <p class="img-description">Веб-сайт</p>
+                
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio7.jpg" alt="журнал">
+                <p class="img-title">Издание Limited Edition</p>
+                <p class="img-description">Дизайн</p>
+                
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio8.jpg" alt="этикетка">
+                <p class="img-title">Проект LAB</p>
+                <p class="img-description">Маркетинг</p>
+            </div>
+
+            <div class="examples-list">
+                <img src="./images/portfolio9.jpg" alt="ноутбук">
+                <p class="img-title">Growing Business</p>
+                <p class="img-description">Приложение</p>
+                
             </div>
         </div>
         
