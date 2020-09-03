@@ -12,6 +12,10 @@ html{
   box-sizing: inherit;
 }
 
+img{
+  display: block;
+}
+
 ul{
   padding: 0px;
   margin: 0px;
@@ -122,6 +126,8 @@ header{
 
 /* === HERO ===*/
 .hero-title{
+  width: 696px;
+  margin: auto auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -138,6 +144,8 @@ header{
   background-color: var(--hero-bg);
   text-align: center;
   padding: 200px 452px;
+
+
 }
 
 .hero-btn{
@@ -163,7 +171,8 @@ li .item{
   width: 270px;
 
 }
-.features-list {
+.features-list,
+.work-list{
   display: flex;
 }
 
@@ -231,6 +240,12 @@ li .item{
 
 
 /*=== OUR TEAM ===*/
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .team .container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -254,7 +269,6 @@ li .item{
 
 .footer{
   text-transform: none;
-  font-style: inherit;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -265,8 +279,9 @@ li .item{
 .footer .container{
   padding-top: 60px;
   padding-bottom: 60px;
-}
+  font-style: normal;
 
+}
 
 .address.map{
   color: var(--white-color);
