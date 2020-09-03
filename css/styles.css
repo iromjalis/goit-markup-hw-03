@@ -26,6 +26,8 @@ a{
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid tomato;
+
 }
 
 .no-padding{
@@ -200,7 +202,7 @@ header{
 
 .footer{
   text-transform: none;
-  font-style: normal;
+  font-style: inherit;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
