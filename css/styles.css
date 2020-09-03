@@ -33,7 +33,6 @@ a{
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
 
 }
 
@@ -94,7 +93,6 @@ body{
 .nav-list .item + .item,
 .contacts-list .item +.item{
   margin-left: 50px;
-  outline: 2px solid tomato;
 }
 
 .link,
@@ -160,14 +158,17 @@ header{
   border-radius: 4px;
 }
 
+.item{
+  margin-right:30px;
+}
+
 .hero-btn:hover,
 .hero-btn:focus{
   color: var(--title-color);
 }
 
 /*=== ОСОБЕННОСТИ ===*/
-li .item{
-  display: inline-block;
+.features-list>.text-title{
   width: 270px;
 
 }
@@ -227,11 +228,10 @@ li .item{
 }
 
 /* === works ===*/
-.work-list .item+.item{
-  display: inline-block;
-  justify-content: space-between;
-  outline: 2px solid tomato;
-  margin-left: 30px;
+.work-list-item:not(:last-child) {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 30px;
 }
 
 .container.work{
@@ -260,10 +260,14 @@ li .item{
 
 }
 .name{
+  margin-top: 30px;
+  margin-bottom: 16px;
   font-weight: 500;
   color: var(--title-color);
   }
 .profession{
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--text-color);
 }
 
