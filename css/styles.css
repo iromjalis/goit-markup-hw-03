@@ -23,9 +23,10 @@ a{
 }
 
 .container{
-  width: 1200px;
+  width: 1170px;
   margin-right: auto;
   margin-left: auto;
+
   outline: 2px solid tomato;
 
 }
@@ -35,7 +36,8 @@ a{
   padding-bottom: 0;
 }
 
-.list{
+.list, 
+.item{
   margin: 0px;
   margin-bottom: 0px;
 }
@@ -52,27 +54,49 @@ a{
 }
 
 body{
+  color: var(--text-color);
+  background-color: var(--header-bg);
+
   font-family: Roboto;
   font-style: 400;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: var(--header-bg);
-  color: var(--text-color);
 }
 
 /* === HEADER ===*/
-header{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+
+/*=== строка с навигацией Студия Портфолио Контакты ====*/
+/*=== контакты ===*/
+.main.container{
+  display: flex;
+  align-items:center;
+}
+
+.nav-list{
+  margin-left: 93px;  
+  display: flex;
+
+}
+
+.contacts-list{
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list .item + .item,
+.contacts-list .item +.item{
+  margin-left: 50px;
+  outline: 2px solid tomato;
 }
 
 .link,
 .nav:visited{
+  display: block;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link:hover,
@@ -85,6 +109,13 @@ header{
 
 .contacts{
   color:var(--text-color);
+}
+
+header{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* === HERO ===*/
@@ -125,9 +156,13 @@ header{
 }
 
 /*=== ОСОБЕННОСТИ ===*/
-.title{
-  margin-top: 0px;
-  margin-bottom: 10px;
+li .item{
+  display: inline-block;
+  width: 270px;
+
+}
+.features-list {
+  display: flex;
 }
 
 .title-text:not(:last-child){
@@ -139,6 +174,9 @@ header{
 }
 
 .title{
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -161,6 +199,10 @@ header{
 }
 
 /* === ЧЕМ МЫ ЗАНИМАЕМСЯ ===*/
+.work-list{
+  display: flex;
+}
+
 .heading{
   font-weight: bold;
   font-size: 36px;
@@ -171,6 +213,14 @@ header{
 
   margin-bottom: 50px;
   margin-top: 0;
+}
+
+/* === works ===*/
+.work-list .item+.item{
+  display: inline-block;
+  justify-content: space-between;
+  outline: 2px solid tomato;
+  margin-left: 30px;
 }
 
 .container.work{
