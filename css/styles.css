@@ -1,11 +1,20 @@
+/* === ОБЩИЕ НАСТРОЙКИ ===*/
 *,
 *::before,
-**::after{
+**::after,
+{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  box-sizing: inherit;
 }
 
 ul{
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
 
@@ -13,7 +22,21 @@ a{
   text-decoration: none;
 }
 
+.container{
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.no-padding{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list{
+  margin: 0px;
+  margin-bottom: 0px;
+}
 :root{
   --text-color: #757575;
   --title-color: #212121;
@@ -37,12 +60,14 @@ body{
   color: var(--text-color);
 }
 
+/* === HEADER ===*/
 header{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .link,
 .nav:visited{
   color: var(--title-color);
@@ -57,10 +82,10 @@ header{
 }
 
 .contacts{
-
   color:var(--text-color);
 }
 
+/* === HERO ===*/
 .hero-title{
   font-weight: 900;
   font-size: 44px;
@@ -69,10 +94,15 @@ header{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .hero{
   background-color: var(--hero-bg);
+  text-align: center;
+  padding: 200px 452px;
 }
 
 .hero-btn{
@@ -84,6 +114,7 @@ header{
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--white-color);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -91,6 +122,16 @@ header{
   color: var(--title-color);
 }
 
+/*=== ОСОБЕННОСТИ ===*/
+.title{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.title-text:not(:last-child){
+  margin: 0 30px 0 0;
+}
+/* ===OUR TEAM===*/
 .team{
   background-color: var(--team-bg);
 }
@@ -109,8 +150,15 @@ header{
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin: 0px 0px;
 }
 
+.features.container{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* === ЧЕМ МЫ ЗАНИМАЕМСЯ ===*/
 .heading{
   font-weight: bold;
   font-size: 36px;
@@ -118,13 +166,29 @@ header{
   text-align: center;
   letter-spacing: 0.03em;
   color:var(--title-color);
+
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
+.container.work{
+  padding-bottom: 94px;
+}
+
+
+/*=== OUR TEAM ===*/
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .team{
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.03em;
+
 }
 .name{
   font-weight: 500;
@@ -144,6 +208,11 @@ header{
   color: var(--address-color);
   background-color: var(--hero-bg);
 }
+.footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 
 .address.map{
   color: var(--white-color);

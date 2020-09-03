@@ -12,36 +12,38 @@
 </head>
 <body>
     <header>
-        <!--Логотип header-->
-        <a href="./index.html"><img src="./images/WebStudio.svg" alt="Логотип"></a>
-        <nav class="nav">
-            <ul class="nav-title">
-                <li ><a href="./index.html" class="link ">
-                    Студия</a></li>
-                <li ><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li ><a href="" class="link">Контакты</a></li>
+        <div class="container">
+                <!--Логотип header-->
+            <a href="./index.html"><img src="./images/WebStudio.svg" alt="Логотип"></a>
+            <nav class="nav">
+                <ul class="nav-title">
+                    <li ><a href="./index.html" class="link ">
+                        Студия</a></li>
+                    <li ><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li ><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <!--Контакты-->
+            <ul>
+                <li > 
+                    <a href="mailto:info@devstudio.com" class="contacts"> 
+    <!--                     <img src="./images/envelope.jpg" alt="конверт" />
+    -->                    info@devstudio.com 
+                    </a>
+                </li>
+                <li >
+                    <a href="tel:+380961111111" class="contacts"> 
+    <!--                     <img src="./images/phone.png" alt="тел" />
+    -->                    +38 096 111 11 11 
+                    </a>
+                </li>
             </ul>
-        </nav>
-    
-        <!--Контакты-->
-        <ul>
-            <li > 
-                <a href="mailto:info@devstudio.com" class="contacts"> 
-<!--                     <img src="./images/envelope.jpg" alt="конверт" />
- -->                    info@devstudio.com 
-                </a>
-            </li>
-            <li >
-                <a href="tel:+380961111111" class="contacts"> 
-<!--                     <img src="./images/phone.png" alt="тел" />
- -->                    +38 096 111 11 11 
-                </a>
-            </li>
-        </ul>
+        </div>
     </header>
 
-    <main>
-        <ul>
+    <main class="container">
+        <ul class="btn-list">
             <li ><a href="" class="hero-btn">Все</a></li>
             <li ><a href="" class="hero-btn">Веб-сайты</a></li>
             <li ><a href="" class="hero-btn">Приложения</a></li>
@@ -100,35 +102,34 @@
    
 
     <footer class="footer">
-        <!--адресс-->
-        <div>
-            <a href="./main.html">
-                <img src="./images/Web-Studio-footer.svg" alt="лого">
-            </a>
-            <address>
-                <ul>
-                    <li class="address map">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li class="address">info@example.com</li>
-                    <li class="address">+38 099 111 11 11</li>
-                </ul>            
-            </address>
-        </div>
+        <div class="container">
+            <!--адресс-->
+        <a href="./index.html">
+            <img src="./images/Web-Studio-footer.svg" alt="лого">
+        </a>
+        <address>
+            <ul>
+                <li class="address map">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address">info@example.com</li>
+                <li class="address">+38 099 111 11 11</li>
+            </ul>            
+        </address>
 
         <!-- присоединяйтесь
         <div>
             <p>Присоединяйтесь</p>
             <ul>
                 <li>
-                    <a href="https://www.instagram.com" ><img src="./images/instagram.png" alt="инста"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram.png" alt="инста"></a>
                 </li>
                 <li>
-                    <a href="https://www.twitter.com" ><img src="./images/twitter.png" alt="твиттер"></a>
+                    <a href="https://www.twitter.com" target="_blank" ><img src="./images/twitter.png" alt="твиттер"></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com" ><img src="./images/Fb.png" alt="фб"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./images/Fb.png" alt="фб"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/" ><img src="./images/linkedin.png" alt="линкедин"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.png" alt="линкедин"></a>
                 </li>
             </ul>
 
@@ -143,6 +144,7 @@
                 <img src="./images/samoletik.png" alt="самолетик">
             </form>
         </div> -->
+        </div>
     </footer>
 </body>
 </html>
