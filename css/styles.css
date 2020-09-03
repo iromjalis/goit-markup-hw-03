@@ -284,9 +284,15 @@ header{
   padding-top: 60px;
   padding-bottom: 60px;
   font-style: normal;
-
+}
+.footer-logo{
+  margin-bottom: 20px;
 }
 
 .address.map{
   color: var(--white-color);
+  margin-bottom: 9px;
+}
+.address:not(:last-child){
+  margin-bottom: 9px;
 }
