@@ -114,6 +114,10 @@ header{
   background-color: var(--team-bg);
 }
 
+.team-container:not(:last-child){
+  margin-right: 30px;
+}
+
 .title{
   font-weight: 700;
   font-size: 14px;
