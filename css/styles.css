@@ -1,8 +1,7 @@
 /* === ОБЩИЕ НАСТРОЙКИ ===*/
 *,
 *::before,
-**::after,
-{
+**::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -312,7 +311,7 @@ header{
   margin-top: 20px;
 }
 
-.address.map{
+.address.map >a{
   color: var(--white-color);
   margin-bottom: 9px;
 }

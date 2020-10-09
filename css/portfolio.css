@@ -135,3 +135,9 @@ main {
   margin-bottom: 0px;
 }
 
+.address.map >a{
+  color: var(--white-color);
+  margin-bottom: 9px;
+}
+
+
