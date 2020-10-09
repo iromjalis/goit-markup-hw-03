@@ -71,7 +71,21 @@ body{
 }
 
 /* === HEADER ===*/
+.logo-link, .logo-link--footer{
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
 
+.logo-link{
+  color: var(--title-color);
+}
+.logo-link--footer{
+  color: var(--white-color);
+} 
 /*=== строка с навигацией Студия Портфолио Контакты ====*/
 /*=== контакты ===*/
 .main.container{
@@ -82,7 +96,6 @@ body{
 .nav-list{
   margin-left: 93px;  
   display: flex;
-
 }
 
 .contacts-list{
@@ -156,6 +169,7 @@ header{
   background-color: var(--accent-color);
   color: var(--white-color);
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .item{
@@ -165,6 +179,7 @@ header{
 .hero-btn:hover,
 .hero-btn:focus{
   color: var(--title-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*=== ОСОБЕННОСТИ ===*/
@@ -252,6 +267,12 @@ header{
   margin-top: 0;
   margin-bottom: 0;
 }
+.team-item{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team{
   font-size: 16px;
   line-height: 1.875;
@@ -264,11 +285,13 @@ header{
   margin-bottom: 16px;
   font-weight: 500;
   color: var(--title-color);
+  background-color: transparent;
   }
 .profession{
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--text-color);
+  background-color: transparent;
 }
 
 .footer{
@@ -285,8 +308,8 @@ header{
   padding-bottom: 60px;
   font-style: normal;
 }
-.footer-logo{
-  margin-bottom: 20px;
+.address-container{
+  margin-top: 20px;
 }
 
 .address.map{
@@ -295,4 +318,7 @@ header{
 }
 .address:not(:last-child){
   margin-bottom: 9px;
+}
+address{
+  font-style: normal;
 }
