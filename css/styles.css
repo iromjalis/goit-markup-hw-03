@@ -31,8 +31,6 @@ a{
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-
 }
 
 .no-padding{
@@ -43,8 +41,8 @@ a{
 .list, 
 .item{
   margin: 0px;
-  margin-bottom: 0px;
 }
+
 :root{
   --text-color: #757575;
   --title-color: #212121;
@@ -85,6 +83,10 @@ body{
 .logo-link--footer{
   color: var(--white-color);
 } 
+
+.logo-link.current{
+  color: var(--accent-color);
+}
 /*=== строка с навигацией Студия Портфолио Контакты ====*/
 /*=== контакты ===*/
 .main.container{
@@ -117,10 +119,9 @@ body{
 
 .link:hover,
 .link:focus,
-.current,
 .contacts:hover,
 .contacts:focus{
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .contacts{
@@ -132,6 +133,7 @@ header{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* === HERO ===*/
@@ -150,12 +152,11 @@ header{
   margin-bottom: 30px;
 }
 
-.hero{
+.hero-container{
   background-color: var(--hero-bg);
   text-align: center;
-  padding: 200px 452px;
-
-
+  padding-top:  200px;
+  padding-bottom: 200px;
 }
 
 .hero-btn{
@@ -171,9 +172,9 @@ header{
   padding: 10px 32px;
 }
 
-.item{
+/* .item{
   margin-right:30px;
-}
+} */
 
 .hero-btn:hover,
 .hero-btn:focus{
@@ -219,7 +220,7 @@ header{
   margin: 0px 0px;
 }
 
-.features.container{
+.features__section{
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -236,9 +237,8 @@ header{
   text-align: center;
   letter-spacing: 0.03em;
   color:var(--title-color);
-
+  margin: 0;
   margin-bottom: 50px;
-  margin-top: 0;
 }
 
 /* === works ===*/
@@ -248,7 +248,7 @@ header{
   margin-right: 30px;
 }
 
-.container.work{
+.work__section{
   padding-bottom: 94px;
 }
 
@@ -293,7 +293,7 @@ header{
   background-color: transparent;
 }
 
-.footer{
+.footer__section{
   text-transform: none;
   text-decoration: none;
   font-size: 14px;
@@ -301,12 +301,11 @@ header{
   letter-spacing: 0.03em;
   color: var(--address-color);
   background-color: var(--hero-bg);
-}
-.footer .container{
   padding-top: 60px;
   padding-bottom: 60px;
   font-style: normal;
 }
+
 .address-container{
   margin-top: 20px;
 }

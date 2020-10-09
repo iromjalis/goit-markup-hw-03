@@ -78,8 +78,8 @@ main {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--title-color);
+  background-color:  #F5F4FA;;
   border-radius: 4px;
   border: 1px solid transparent;
 
@@ -91,7 +91,8 @@ main {
 }
 .hero-btn:hover,
 .hero-btn:focus{
-  color: var(--title-color);
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .img-title{
@@ -115,9 +116,15 @@ main {
   padding-left: 24px;
 }
 
-.flex-container{
+.flex__container{
   display: flex;
   flex-wrap: wrap;
+    flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .flex-element{
