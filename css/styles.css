@@ -154,13 +154,13 @@ header {
 
 .hero-section {
   background-color: var(--hero-bg);
-}
-
-.hero.container {
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
+
+/* .hero.container {
+} */
 
 .hero-btn {
   font-weight: 700;
@@ -227,7 +227,16 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.features-list {
+  display: flex;
+}
+.features-item {
+  width: 270px;
+}
 
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* === ЧЕМ МЫ ЗАНИМАЕМСЯ ===*/
 .work-list {
   display: flex;
@@ -258,7 +267,6 @@ header {
 /* !=== OUR TEAM ===*/
 .team-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
