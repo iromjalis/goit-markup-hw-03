@@ -90,7 +90,7 @@ body {
 }
 /*=== строка с навигацией Студия Портфолио Контакты ====*/
 /*=== контакты ===*/
-.main.container {
+.header.container {
   display: flex;
   align-items: center;
 }
@@ -148,13 +148,15 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
 .hero-section {
   background-color: var(--hero-bg);
+}
+
+.hero.container {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
