@@ -305,6 +305,7 @@ header {
 }
 
 .footer__section {
+  display: flex;
   text-transform: none;
   text-decoration: none;
   font-size: 14px;
